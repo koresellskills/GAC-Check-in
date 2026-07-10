@@ -22,6 +22,8 @@ async function startScanner() {
         const cameras = await Html5Qrcode.getCameras();
 
         console.table(cameras);
+        console.log("Hey Chrestotes!");
+        
 
         if (cameras.length === 0) {
             throw new Error("No camera found.");
